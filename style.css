@@ -908,7 +908,6 @@ button, input, textarea { font: inherit; }
   background: rgba(0,0,0,.72);
   backdrop-filter: blur(10px);
 }
-  }
 .modal-panel {
   position: relative;
   width: min(980px, calc(100vw - 24px));
