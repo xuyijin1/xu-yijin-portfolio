@@ -908,6 +908,7 @@ button, input, textarea { font: inherit; }
   background: rgba(0,0,0,.72);
   backdrop-filter: blur(10px);
 }
+  }
 .modal-panel {
   position: relative;
   width: min(980px, calc(100vw - 24px));
@@ -1214,6 +1215,13 @@ button, input, textarea { font: inherit; }
   .timeline-divider {
     text-align: left;
     padding: 8px 0;
+  }
+  .modal-close {
+    top: 6px;
+    right: 6px;
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
   }
   .modal-panel {
     width: min(100vw - 16px, 980px);
