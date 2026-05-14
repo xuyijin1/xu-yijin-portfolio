@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>洛克王国：世界 - 新闻中心</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>洛克王国：世界</h1>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#" class="active">新闻中心</a></li>
+                    <li><a href="#">游戏介绍</a></li>
+                    <li><a href="#">精灵图鉴</a></li>
+                    <li><a href="#">社区论坛</a></li>
+                    <li><a href="#">下载游戏</a></li>
+                </ul>
+            </nav>
+            <div class="right-section">
+                <div class="search-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button class="login-btn">登录/注册</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- 英雄横幅区 -->
+    <section class="hero-banner">
+        <div class="hero-content">
+            <h1 class="hero-title">洛克王国：世界</h1>
+            <p class="hero-subtitle">探索精灵的奇幻世界，开启你的魔法冒险</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="125800">0</span>
+                    <span class="stat-label">当前在线</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="3470000">0</span>
+                    <span class="stat-label">已捕捉精灵</span>
+                </div>
+            </div>
+            <div class="hero-buttons">
+                <button class="primary-btn">立即下载</button>
+                <button class="secondary-btn">
+                    <i class="fas fa-play"></i> 观看预告片
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 新闻中心主体区 -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-content">
+                <!-- 左侧新闻列表 -->
+                <div class="news-list">
+                    <!-- 筛选标签栏 -->
+                    <div class="news-tabs">
+                        <button class="tab active">全部</button>
+                        <button class="tab">官方公告</button>
+                        <button class="tab">版本更新</button>
+                        <button class="tab">活动资讯</button>
+                        <button class="tab">攻略心得</button>
+                    </div>
+
+                    <!-- 新闻卡片网格 -->
+                    <div class="news-grid">
+                        <!-- 卡片1 - 上线新闻 -->
+                        <a href="news1.html" class="news-card-link">
+                            <div class="news-card">
+                                <div class="card-image">
+                                    <img src="jpg/bg-1.avif" alt="游戏全平台上线宣传图">
+                                    <span class="date-badge">3月26日</span>
+                                </div>
+                                <div class="card-content">
+                                    <span class="news-tag official">官方公告</span>
+                                    <h3 class="news-title">《洛克王国：世界》全平台正式上线！</h3>
+                                    <p class="news-summary">3月26日，腾讯魔方工作室基于虚幻4引擎打造的《洛克王国：世界》正式全平台上线，支持PC、安卓、iOS、鸿蒙多端游玩...</p>
+                                    <div class="news-meta">
+                                        <span class="views"><i class="far fa-eye"></i> 45.2k</span>
+                                        <span class="comments"><i class="far fa-comment"></i> 1.2k</span>
+                                        <span class="date">2026-03-26</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- 卡片2 - 定档新闻 -->
+                        <a href="news2.html" class="news-card-link">
+                            <div class="news-card">
+                                <div class="card-image">
+                                    <img src="jpg/bg-2.avif" alt="定档海报">
+                                    <span class="date-badge">12月3日</span>
+                                </div>
+                                <div class="card-content">
+                                    <span class="news-tag official">官方公告</span>
+                                    <h3 class="news-title">《洛克王国：世界》定档2026年3月26日！</h3>
+                                    <p class="news-summary">12月3日，在腾讯游戏魔方工作室十五周年庆超有料直面会上，备受玩家瞩目的洛克王国IP新作官宣定档...</p>
+                                    <div class="news-meta">
+                                        <span class="views"><i class="far fa-eye"></i> 38.7k</span>
+                                        <span class="comments"><i class="far fa-comment"></i> 956</span>
+                                        <span class="date">2025-12-03</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- 卡片3 - 版本更新 -->
+                        <a href="news3.html" class="news-card-link">
+                            <div class="news-card">
+                                <div class="card-image">
+                                    <img src="jpg/bg-3-1.avif" alt="S1赛季'暗夜拾光'主题图">
+                                    <span class="date-badge">3月26日</span>
+                                </div>
+                                <div class="card-content">
+                                    <span class="news-tag update">版本更新</span>
+                                    <h3 class="news-title">S1赛季"暗夜拾光"开启，万字更新公告</h3>
+                                    <p class="news-summary">《洛克王国：世界》发布万字更新公告，S1赛季"暗夜拾光"正式开启，新增传说精灵龙息帕尔、347只精灵图鉴...</p>
+                                    <div class="news-meta">
+                                        <span class="views"><i class="far fa-eye"></i> 28.3k</span>
+                                        <span class="comments"><i class="far fa-comment"></i> 742</span>
+                                        <span class="date">2026-03-26</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 右侧侧边栏 -->
+                <div class="sidebar">
+                    <!-- 热门标签云 -->
+                    <div class="sidebar-section">
+                        <h3 class="section-title">热门话题</h3>
+                        <div class="tag-cloud">
+                            <span class="tag">#S1赛季</span>
+                            <span class="tag">#龙息帕尔</span>
+                            <span class="tag">#多端互通</span>
+                            <span class="tag">#魔法学院</span>
+                            <span class="tag">#精灵捕捉</span>
+                            <span class="tag">#虚幻4引擎</span>
+                        </div>
+                    </div>
+
+                    <!-- 最新活动快讯 -->
+                    <div class="sidebar-section">
+                        <h3 class="section-title">正在进行</h3>
+                        <div class="activity-card">
+                            <h4>冬日限定时装领取活动</h4>
+                            <div class="countdown">
+                                <span class="countdown-label">剩余</span>
+                                <span class="countdown-time">3天</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 精灵图鉴快捷入口 -->
+                    <div class="sidebar-section">
+                        <h3 class="section-title">热门精灵</h3>
+                        <div class="sprite-grid">
+                            <div class="sprite-item">
+                                <img src="jpg/NO.295_龙息帕尔.webp" alt="龙息帕尔">
+                                <span>龙息帕尔</span>
+                            </div>
+                            <div class="sprite-item">
+                                <img src="jpg/NO.294_帕尔萨斯.webp" alt="帕尔萨斯">
+                                <span>帕尔萨斯</span>
+                            </div>
+                            <div class="sprite-item">
+                                <img src="jpg/NO.005_火花.webp" alt="火花">
+                                <span>火花</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 订阅通知 -->
+                    <div class="sidebar-section">
+                        <h3 class="section-title">订阅新闻推送</h3>
+                        <div class="subscribe-form">
+                            <input type="email" placeholder="请输入邮箱地址">
+                            <button class="subscribe-btn">订阅</button>
+                            <p class="subscribe-tip">订阅即可获得限定精灵皮肤</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <h2>洛克王国：世界</h2>
+                    </div>
+                    <p class="footer-description">探索精灵的奇幻世界，开启你的魔法冒险</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-weixin"></i></a>
+                        <a href="#"><i class="fab fa-weibo"></i></a>
+                        <a href="#"><i class="fab fa-bilibili"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-middle">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">用户协议</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                        <li><a href="#">家长监护</a></li>
+                        <li><a href="#">客服中心</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <div class="qrcode">
+                        <img src="jpg/9ea17c9488a0c6576c4ebc6f8f0dec32.jpg" alt="下载二维码">
+                        <p>微信扫码下载</p>
+                    </div>
+                    <div class="age-rating">
+                        <span>适龄提示：12+</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Tencent Games. All Rights Reserved. | 增值电信业务经营许可证 | 粤网文[2023]xxx号</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // 数字动画效果
+        function animateNumbers() {
+            const numbers = document.querySelectorAll('.stat-number');
+            numbers.forEach(number => {
+                const target = parseInt(number.getAttribute('data-target'));
+                const duration = 2000;
+                const step = target / (duration / 16);
+                let current = 0;
+                
+                const updateNumber = () => {
+                    current += step;
+                    if (current < target) {
+                        number.textContent = Math.floor(current).toLocaleString();
+                        requestAnimationFrame(updateNumber);
+                    } else {
+                        number.textContent = target.toLocaleString();
+                    }
+                };
+                
+                updateNumber();
+            });
+        }
+
+        // 导航栏滚动效果
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // 新闻卡片悬停效果
+        const newsCards = document.querySelectorAll('.news-card');
+        newsCards.forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.classList.add('hovered');
+            });
+            card.addEventListener('mouseleave', function() {
+                this.classList.remove('hovered');
+            });
+        });
+
+        // 标签切换效果
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(tab => {
+            tab.addEventListener('click', function() {
+                tabs.forEach(t => t.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+
+        // 返回顶部按钮
+        const backToTopBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        backToTopBtn.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // 页面加载完成后执行动画
+        window.addEventListener('load', function() {
+            animateNumbers();
+            // 新闻卡片依次淡入
+            const cards = document.querySelectorAll('.news-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.classList.add('fade-in');
+                }, index * 100);
+            });
+        });
+    </script>
+</body>
+</html>
