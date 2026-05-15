@@ -10,7 +10,7 @@ const portfolioData = [
     gridCol: '1 / 3',
     visualClass: 'visual-video',
     banner: 'Documentary',
-    videoUrl: 'videos/compressed/jiangyun.mp4',
+    bilibili: 'BV1P45q6nEdP',
     featured: true,
     coverImage: 'images/covers/jiangyun.png',
     coverStyle: 'background-size: 130%; background-position: center;'
@@ -26,7 +26,7 @@ const portfolioData = [
     gridCol: '1 / 4',
     visualClass: 'visual-video',
     banner: 'Promo Video',
-    videoUrl: 'videos/compressed/promo.mp4',
+    bilibili: 'BV1W45q6nEfc',
     featured: true,
     coverImage: 'images/covers/promo.png'
   },
@@ -41,7 +41,7 @@ const portfolioData = [
     gridCol: '1 / 2',
     visualClass: 'visual-video',
     banner: 'Educational',
-    videoUrl: 'videos/compressed/poetry.mp4',
+    bilibili: 'BV1P45q6nEuk',
     featured: true,
     coverImage: 'images/covers/poetry.png'
   },
@@ -174,7 +174,10 @@ function openModal(item) {
   modal.setAttribute('aria-hidden', 'false');
   
   let visualContent = '';
-  if (item.episodes && item.episodes.length > 0) {
+  if (item.bilibili) {
+    visualContent = `<iframe class="modal-iframe" src="//player.bilibili.com/player.html?bvid=${item.bilibili}&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>`;
+    modalVisual.className = 'modal-visual modal-iframe-container';
+  } else if (item.episodes && item.episodes.length > 0) {
     visualContent = `
       <div class="modal-video-container">
         <video class="modal-video" src="${item.episodes[0].url}" controls autoplay muted playsinline preload="none"></video>
