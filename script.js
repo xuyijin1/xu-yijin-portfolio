@@ -177,14 +177,14 @@ function openModal(item) {
   if (item.episodes && item.episodes.length > 0) {
     visualContent = `
       <div class="modal-video-container">
-        <video class="modal-video" src="${item.episodes[0].url}" controls autoplay muted playsinline preload="none"></video>
+        <video class="modal-video" src="${item.episodes[0].url}" controls autoplay muted playsinline preload="auto"></video>
         <div class="episode-selector">
           ${item.episodes.map((ep, i) => `<button class="episode-btn${i === 0 ? ' active' : ''}" data-index="${i}">${ep.title}</button>`).join('')}
         </div>
       </div>`;
     modalVisual.className = 'modal-visual modal-video-container';
   } else if (item.videoUrl) {
-    visualContent = `<video class="modal-video" src="${item.videoUrl}" controls autoplay muted playsinline preload="none"></video>`;
+    visualContent = `<video class="modal-video" src="${item.videoUrl}" controls autoplay muted playsinline preload="auto"></video>`;
     modalVisual.className = 'modal-visual modal-video-container';
   } else if (item.imageUrls && item.imageUrls.length > 0) {
     visualContent = `
